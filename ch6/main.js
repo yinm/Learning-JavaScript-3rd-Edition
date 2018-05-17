@@ -1,6 +1,11 @@
-function getSentence([ subject, verb, object ]) {
-  return `${subject} ${verb} ${object}`
+function addPrefix(prefix, ...words) {
+  const prefixedWords = []
+  for (let i = 0; i < words.length; i++) {
+    prefixedWords[i] = prefix + words[i]
+  }
+
+  return prefixedWords
 }
 
-const arr = ['I', 'love', 'JavaScript']
-console.log(getSentence(arr))
+console.log(addPrefix('con', 'verse', 'vex'))
+console.log(addPrefix('non-', 'programmer', 'designer', 'coder'))
