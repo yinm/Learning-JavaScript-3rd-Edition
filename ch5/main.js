@@ -1,7 +1,4 @@
-const obj = {b: 2, c: 3, d: 4}
-let a, b, c
-
-({a, b, c} = obj)
-console.log(a)
-console.log(b)
-console.log(c)
+const arr = [1, 2, 3]
+let [x, y] = arr
+console.log(x)
+console.log(y)
